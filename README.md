@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
+# Simple To Do List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
+This is a simple task management application built with **React (Class Components) and TypeScript**. The app allows users to **add, mark as completed, and delete tasks** while keeping the data in **localStorage**.
 
-Currently, two official plugins are available:
+## 🛠 Features
+- 📋 **Add Tasks**: Users can input a task description and a deadline.
+- ✅ **Mark as Completed**: Users can toggle task completion status.
+- ❌ **Delete Tasks**: Users can remove tasks from the list.
+- 🔄 **Data Persistence**: Tasks are stored in localStorage, so they remain even after a page refresh.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📂 Project Structure
+```
+📦 task-manager
+├── 📂 src
+│   ├── 📄 App.tsx
+│   ├── 📄 index.tsx
+│   ├── 📂 components
+│   │   ├── 📄 TaskManager.tsx  // Main component managing tasks
+│   │   ├── 📄 TaskForm.tsx     // Form for adding new tasks
+│   │   ├── 📄 TaskList.tsx     // Displays tasks and controls
+│   ├── 📂 styles
+│   ├── 📄 README.md
+├── 📄 package.json
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Installation & Setup
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+1️⃣ **Clone the Repository**
+```bash
+git clone https://github.com/Tol1bjonov/to-do-list2
+cd to-do-list2
 ```
+
+2️⃣ **Install Dependencies**
+```bash
+npm install
+```
+
+3️⃣ **Run the Project**
+```bash
+npm start
+```
+
+## 🔧 Technologies Used
+- ⚛️ React (Class Components)
+- 💻 TypeScript
+- 🗄️ LocalStorage for data persistence
+
+## 📌 How to Use
+1. **Add a Task**: Enter a description and a deadline, then click "Qo‘shish".
+2. **Mark as Completed**: Click the "Bajarildi" button to toggle completion.
+3. **Delete a Task**: Click the ❌ button to remove a task.
+
+## 📌 Future Improvements
+- 🎨 Add a better UI design with CSS/Styled Components.
+- 📅 Add filtering (e.g., show only completed or pending tasks).
+- 🔔 Add notifications for upcoming deadlines.
