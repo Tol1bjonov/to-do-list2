@@ -39,7 +39,7 @@ npm install
 
 3️⃣ **Run the Project**
 ```bash
-npm start
+npm run dev
 ```
 
 ## 🔧 Technologies Used
